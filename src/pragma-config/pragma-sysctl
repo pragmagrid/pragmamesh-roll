@@ -3,7 +3,7 @@
 #
 #
 # chkconfig: 345 98 98
-# description: sets up sysctl for the idpl 
+# description: sets up sysctl for pragma 
 #
 # @Copyright@
 # 
@@ -64,8 +64,8 @@
 . /etc/init.d/functions
 
 PS="/bin/ps auwx"
-CONFIGDIR=/etc/idpl
-CONFIGFILE=idpl.sysctl
+CONFIGDIR=/etc/pragma
+CONFIGFILE=pragma.sysctl
 STATEFILE=system.sysctl
 applysysctl() {
 	/sbin/sysctl -p $CONFIGDIR/$CONFIGFILE > /dev/null
