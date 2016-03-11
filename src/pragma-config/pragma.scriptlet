@@ -1,0 +1,2 @@
+%post
+/sbin/chkconfig --add pragma-sysctl
